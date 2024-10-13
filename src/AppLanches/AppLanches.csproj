@@ -67,11 +67,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Pages\" />
+		<MauiSplashScreen Include="Resources\Splash\lanche.svg" Color="#ede5cc" TintColor="#67203c" BaseSize="128,128" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MauiSplashScreen Include="Resources\Splash\lanche.svg" Color="#ede5cc" TintColor="#67203c" BaseSize="128,128" />
+	  <MauiXaml Update="Pages\InscricaoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
