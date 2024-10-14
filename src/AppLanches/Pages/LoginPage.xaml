@@ -5,41 +5,41 @@
              Title="LoginPage"
              NavigationPage.HasNavigationBar="False">
 
-    <Grid RowDefinitions="Auto, Auto, Auto, Auto, *"
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*"
           RowSpacing="20"
-          Margin="20, 150, 20, 40">
+          Margin="20,150,20,40">
 
-        <Image Grid.Row="0" 
+        <Image Grid.Row="0"
                Source="lanchesico.png"
-               Aspect="AspectFill"
+               Aspect="AspectFit"
                HeightRequest="100"
                WidthRequest="100" />
-
         <Label Grid.Row="1"
-               Text="Olá! Junte-se a nós"
+               Text="Login"
                FontAttributes="Bold"
-               HorizontalOptions="Center"/>
+               HorizontalOptions="Center" />
 
         <Frame Grid.Row="2"
                Padding="15"
                BackgroundColor="White">
+
             <VerticalStackLayout>
-                <Entry Placeholder="Email" 
+
+                <Entry Placeholder="Email"
                        x:Name="EntEmail" />
 
-                <Entry Placeholder="Password" 
+                <Entry Placeholder="Password"
                        IsPassword="True"
-                       x:Name="EntPassword" />  
+                       x:Name="EntPassword" />
             </VerticalStackLayout>
         </Frame>
 
         <Button Grid.Row="3"
                 Text="Entrar"
                 FontSize="Medium"
+                x:Name="BtnSignIn" 
                 BackgroundColor="#A90409"
-                x:Name="BtnSignup"
-                Clicked="BtnSignup_Clicked"/>
-
+                Clicked="BtnSignIn_Clicked"/>
         <HorizontalStackLayout Grid.Row="4"
                                Spacing="2"
                                HorizontalOptions="Center"
@@ -52,5 +52,4 @@
             </Label>
         </HorizontalStackLayout>
     </Grid>
-    
 </ContentPage>
