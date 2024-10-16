@@ -16,6 +16,7 @@ public partial class HomePage : ContentPage
         _apiService = apiService ?? throw new ArgumentNullException(nameof(apiService));
         LblNomeUsuario.Text = "Olá, " + Preferences.Get("usuarionome", string.Empty);
         _validator = validator;
+        Title = AppConfig.tituloHomePage;
     }
 
     protected override async void OnAppearing()
