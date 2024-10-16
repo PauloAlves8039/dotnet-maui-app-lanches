@@ -118,6 +118,15 @@ public partial class HomePage : ContentPage
 
     private void CvCategorias_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
+        var currentSelection = e.CurrentSelection.FirstOrDefault() as Categoria;
 
+        if (currentSelection is null) return;
+
+        Navigation.PushAsync(new ListaProdutosPage(currentSelection.Id,
+                                                     currentSelection.Nome!,
+                                                     _apiService,
+                                                     _validator));
+
+        ((CollectionView)sender).SelectedItem = null;
     }
 }
