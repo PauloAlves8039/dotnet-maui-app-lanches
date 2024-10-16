@@ -5,8 +5,9 @@
              Title="ListaProdutosPage">
 
     <CollectionView x:Name="CvProdutos"
-                 SelectionMode="Single"
-                 Margin="10">
+                    SelectionMode="Single"
+                    Margin="10"
+                    SelectionChanged="CvProdutos_SelectionChanged">
 
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical"
