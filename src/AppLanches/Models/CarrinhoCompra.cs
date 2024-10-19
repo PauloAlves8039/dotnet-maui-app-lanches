@@ -2,7 +2,7 @@
 {
     public class CarrinhoCompra
     {
-        public decimal Preco { get; set; }
+        public decimal PrecoUnitario { get; set; }
         public int Quantidade { get; set; }
         public decimal ValorTotal { get; set; }
         public int ProdutoId { get; set; }
