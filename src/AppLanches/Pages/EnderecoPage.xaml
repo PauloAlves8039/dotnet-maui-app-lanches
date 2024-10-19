@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanches.Pages.EnderecoPage"
+             Title="EnderecoPage">
+
+    <VerticalStackLayout Margin="20" Spacing="10" VerticalOptions="Start">
+
+        <Label Text="Endereço de entrega" HorizontalOptions="Center" FontSize="Large" />
+
+        <Frame Padding="10" BackgroundColor="White">
+            <VerticalStackLayout>
+
+                <Entry Placeholder="Nome Completo" 
+                       x:Name="EntNome" 
+                       FontAttributes="Bold"
+                       FontSize="Medium" 
+                       Keyboard="Default"/>
+
+                <Entry Placeholder="No. do telefone" 
+                       x:Name="EntTelefone" 
+                       FontAttributes="Bold" 
+                       FontSize="Medium" 
+                       Keyboard="Telephone"/>
+
+                <Entry Placeholder="Endereço"  
+                       HeightRequest="100" 
+                       x:Name="EntEndereco" 
+                       FontAttributes="Bold" 
+                       FontSize="Medium" 
+                       Keyboard="Default"/>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button x:Name="BtnSalvar"
+                BackgroundColor="#3CB371"
+                TextColor="White"
+                Text="Salvar" 
+                FontSize="Medium" 
+                Clicked="BtnSalvar_Clicked"/>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>

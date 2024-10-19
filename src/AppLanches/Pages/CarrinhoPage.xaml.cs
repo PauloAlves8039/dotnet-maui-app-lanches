@@ -1,4 +1,4 @@
-using AppLanches.Models;
+﻿using AppLanches.Models;
 using AppLanches.Services;
 using AppLanches.Validations;
 using System.Collections.ObjectModel;
@@ -26,6 +26,21 @@ public partial class CarrinhoPage : ContentPage
     {
         base.OnAppearing();
         await GetItensCarrinhoCompra();
+
+        bool enderecoSalvo = Preferences.ContainsKey("endereco");
+
+        if (enderecoSalvo)
+        {
+            string nome = Preferences.Get("nome", string.Empty);
+            string endereco = Preferences.Get("endereco", string.Empty);
+            string telefone = Preferences.Get("telefone", string.Empty);
+
+            LblEndereco.Text = $"{nome}\n{endereco} \n{telefone}";
+        }
+        else
+        {
+            LblEndereco.Text = "Informe o seu endere�o";
+        }
     }
 
     private async Task<bool> GetItensCarrinhoCompra()
@@ -43,7 +58,7 @@ public partial class CarrinhoPage : ContentPage
 
             if (itensCarrinhoCompra == null)
             {
-                await DisplayAlert("Erro", errorMessage ?? "N�o foi possivel obter os itens do carrinho de compra.", "OK");
+                await DisplayAlert("Erro", errorMessage ?? "Não foi possivel obter os itens do carrinho de compra.", "OK");
                 return false;
             }
 
@@ -130,7 +145,7 @@ public partial class CarrinhoPage : ContentPage
 
     private void BtnEditaEndereco_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new EnderecoPage());
     }
 
     private void TapConfirmarPedido_Tapped(object sender, TappedEventArgs e)
