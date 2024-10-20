@@ -142,6 +142,33 @@ public class ApiService
         }
     }
 
+    public async Task<ApiResponse<bool>> ConfirmarPedido(Pedido pedido)
+    {
+        try
+        {
+            var json = JsonSerializer.Serialize(pedido, _serializerOptions);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await PostRequest("api/Pedidos", content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                string errorMessage = response.StatusCode == HttpStatusCode.Unauthorized
+                    ? "Unauthorized"
+                    : $"Erro ao enviar requisição HTTP: {response.StatusCode}";
+
+                _logger.LogError($"Erro ao enviar requisição HTTP: {response.StatusCode}");
+                return new ApiResponse<bool> { ErrorMessage = errorMessage };
+            }
+            return new ApiResponse<bool> { Data = true };
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Erro ao confirmar pedido: {ex.Message}");
+            return new ApiResponse<bool> { ErrorMessage = ex.Message };
+        }
+    }
+
     private async Task<HttpResponseMessage> PostRequest(string uri, HttpContent content)
     {
         var enderecoUrl = _baseUrl + uri;
