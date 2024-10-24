@@ -123,7 +123,7 @@ public partial class PerfilPage : ContentPage
 
     private void MinhaConta_Tapped(object sender, TappedEventArgs e)
     {
-
+        Navigation.PushAsync(new MinhaContaPage(_apiService));
     }
 
     private void Perguntas_Tapped(object sender, TappedEventArgs e)

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanches.Pages.MinhaContaPage"
+             Title="Minha Conta">
+
+    <Grid RowDefinitions="Auto,*" RowSpacing="0">
+
+        <VerticalStackLayout Grid.Row="0"
+                         BackgroundColor="#00FFFF"
+                         VerticalOptions="Start"
+                         Spacing="1"
+                         Padding="20">
+
+            <ImageButton Source="user1.png"
+                     HeightRequest="150"
+                     WidthRequest="150"
+                     CornerRadius="125"
+                     Aspect="AspectFill"
+                     x:Name="ImgBtnPerfil"/>
+
+            <Label x:Name="LblNomeUsuario"
+               HorizontalOptions="Center"
+               TextColor="Black" />
+
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Row="1"
+                         Margin="20"
+                         Spacing="20">
+
+            <Entry Placeholder="Nome"
+               FontSize="12"
+               x:Name="EntNome" />
+
+            <Entry Placeholder="Email"
+               Keyboard="Email"
+               FontSize="12"
+               x:Name="EntEmail" />
+
+            <Entry Placeholder="Telefone"
+                 Keyboard="Telephone"
+                 FontSize="12"
+                 x:Name="EntFone" />
+
+            <Button Text="Salvar"
+                FontSize="Small"
+                FontAttributes="Bold"
+                Clicked="Button_Clicked"
+                BackgroundColor="#00FFFF"
+                TextColor="#A52A2A" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

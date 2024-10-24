@@ -7,7 +7,7 @@
     <Grid RowDefinitions="Auto,5*,1*" RowSpacing="0">
 
         <VerticalStackLayout Grid.Row="0"
-                             BackgroundColor="#00CED1"
+                             BackgroundColor="#00FFFF"
                              VerticalOptions="Start"
                              Spacing="1"
                              Padding="20">
