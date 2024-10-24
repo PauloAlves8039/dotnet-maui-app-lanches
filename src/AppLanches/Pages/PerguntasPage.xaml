@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanches.Pages.PerguntasPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Perguntas Frequentes">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+            <Label Text="Perguntas Frequentes"
+                   FontSize="Medium"
+                   TextColor="DarkBlue"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Como posso fazer um pedido?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Para fazer um pedido, você deve navegar pelo nosso catálogo de lanches, selecionar os itens desejados, adicionar ao carrinho e seguir para o checkout para finalizar a compra."
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Quais são as formas de pagamento aceitas?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Aceitamos cartões de crédito e débito, Pix, e pagamento em dinheiro na entrega."
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Posso acompanhar o status do meu pedido?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Sim, você pode acompanhar o status do seu pedido através da seção 'Meus Pedidos' no nosso aplicativo."
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Quanto tempo leva para meu pedido ser entregue?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="O tempo de entrega pode variar dependendo da sua localização e da demanda no momento. Geralmente, nossos pedidos são entregues em até 45 minutos."
+                            TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Posso cancelar ou alterar meu pedido?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Você pode cancelar ou alterar seu pedido dentro de 10 minutos após a realização do mesmo. Para isso, entre em contato com o nosso suporte através do aplicativo."
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="O que faço se receber um pedido incorreto?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Se você receber um pedido incorreto, entre em contato com nosso suporte imediatamente para que possamos resolver o problema o mais rápido possível."
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Como posso entrar em contato com o suporte?"
+                           FontSize="15"
+                           FontAttributes="Bold" />
+                </toolkit:Expander.Header>
+                <toolkit:Expander.Content>
+                    <Label Text="Você pode entrar em contato com o suporte de segunda a sexta-feira através do email 'contato@lanchesmac.com' ou pelo telefone : (14)9876-0011 das 8:00 às 18: hs"
+                           TextColor="DarkBlue"
+                           FontSize="12" />
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
