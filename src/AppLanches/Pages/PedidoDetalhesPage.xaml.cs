@@ -27,6 +27,9 @@ public partial class PedidoDetalhesPage : ContentPage
     {
         try
         {
+            loadIndicator.IsRunning = true;
+            loadIndicator.IsVisible = true;
+
             var (pedidoDetalhes, errorMessage) = await _apiService.GetPedidoDetalhes(pedidoId);
 
             if (errorMessage == "Unauthorized" && !_loginPageDisplayed)
@@ -48,6 +51,11 @@ public partial class PedidoDetalhesPage : ContentPage
         catch (Exception)
         {
             await DisplayAlert("Erro", "Ocorreu um erro ao obter os detalhes. Tente novamente mais tarde.", "OK");
+        }
+        finally
+        {
+            loadIndicator.IsRunning = false;
+            loadIndicator.IsVisible = false;
         }
     }
 
