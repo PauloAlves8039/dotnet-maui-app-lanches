@@ -9,7 +9,7 @@
         <ActivityIndicator x:Name="loadPedidosIndicator"
                            IsRunning="false"
                            IsVisible="false"
-                           Color="Blue"
+                           Color="#FB8C00"
                            HorizontalOptions="Center"
                            VerticalOptions="Center" />
 

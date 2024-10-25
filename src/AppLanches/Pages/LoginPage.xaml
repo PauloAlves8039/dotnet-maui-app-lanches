@@ -21,7 +21,7 @@
 
         <Frame Grid.Row="2"
                Padding="15"
-               BackgroundColor="White">
+               BackgroundColor="#FFFFFF">
 
             <VerticalStackLayout>
 
@@ -38,14 +38,14 @@
                 Text="Entrar"
                 FontSize="Medium"
                 x:Name="BtnSignIn" 
-                BackgroundColor="#A90409"
+                BackgroundColor="#32CD32"
                 Clicked="BtnSignIn_Clicked"/>
         <HorizontalStackLayout Grid.Row="4"
                                Spacing="2"
                                HorizontalOptions="Center"
                                VerticalOptions="EndAndExpand">
             <Label Text="Não tem conta ? " />
-            <Label Text="Faça o registro agora" TextColor="#A90409" FontAttributes="Bold">
+            <Label Text="Faça o registro agora" TextColor="#32CD32" FontAttributes="Bold">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer x:Name="TapRegister" Tapped="TapRegister_Tapped"/>
                 </Label.GestureRecognizers>

@@ -35,8 +35,8 @@
                 <DataTemplate>
                     <VerticalStackLayout>
                         <Image HeightRequest="80"
-                                   WidthRequest="80"
-                                   Source="{Binding CaminhoImagem}"/>
+                               WidthRequest="80"
+                               Source="{Binding CaminhoImagem}"/>
                         <Label HorizontalOptions="Center"
                                FontSize="Small"
                                Text="{Binding Nome}"/>
@@ -46,11 +46,11 @@
         </CollectionView>
 
         <Label Grid.Row="3"
-              Text="Mais Vendidos"
-              FontSize="Medium"
-              TextColor="#A90409"
-              FontAttributes="Bold"
-              VerticalOptions="Center" />
+               Text="Mais Vendidos"
+               FontSize="Medium"
+               TextColor="#A90409"
+               FontAttributes="Bold"
+               VerticalOptions="Center" />
 
         <CollectionView x:Name="CvMaisVendidos"
                         Grid.Row="4"
@@ -71,7 +71,7 @@
                                    WidthRequest="120"
                                    Source="{Binding CaminhoImagem}"/>
 
-                            <Label TextColor="White"
+                            <Label TextColor="#FFFFFF"
                                    HorizontalTextAlignment="Center"
                                    VerticalTextAlignment="Center"
                                    FontSize="14"
@@ -111,9 +111,9 @@
                         <Grid RowSpacing="3"
                               RowDefinitions="Auto,Auto,Auto">
                             <Image Aspect="AspectFill"
-                                       HeightRequest="120"
-                                       WidthRequest="120"
-                                       Source="{Binding CaminhoImagem}"/>
+                                   HeightRequest="120"
+                                   WidthRequest="120"
+                                   Source="{Binding CaminhoImagem}"/>
                             <Label Grid.Row="1"
                                    FontAttributes="Bold"
                                    LineBreakMode="WordWrap"

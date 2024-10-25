@@ -20,7 +20,7 @@
                      Margin="20"
                      Padding="5"
                      Source="heart"
-                     BackgroundColor="White"
+                     BackgroundColor="#FFFFFF"
                      HorizontalOptions="End"
                      VerticalOptions="Start"
                      x:Name="ImagemBtnFavorito"                      
@@ -34,8 +34,8 @@
             <Button HeightRequest="50"
                     WidthRequest="50"
                     CornerRadius="25"
-                    BackgroundColor="#3CB371"
-                    TextColor="White"
+                    BackgroundColor="#32CD32"
+                    TextColor="#FFFFFF"
                     Text="-"
                     Padding="0"
                     FontSize="30"
@@ -48,13 +48,13 @@
             <Label x:Name="LblQuantidade"
                    Text="1"
                    FontSize="Large"
-                 VerticalTextAlignment="Center" />
+                   VerticalTextAlignment="Center" />
 
             <Button HeightRequest="50"
                     WidthRequest="50"
                     CornerRadius="25"
-                    BackgroundColor="#3CB371"
-                    TextColor="White"
+                    BackgroundColor="#32CD32"
+                    TextColor="#FFFFFF"
                     Text="+"
                     Padding="0"
                     FontSize="30"
@@ -107,15 +107,19 @@
                        VerticalOptions="Center"
                        FontSize="Medium"
                        FontAttributes="Bold"
-                     HorizontalOptions="Center" />
+                       HorizontalOptions="Center" />
 
                 <Label VerticalOptions="Center"
                        HorizontalOptions="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="R$ " FontSize="Medium"  FontAttributes="Bold" />
-                                <Span x:Name="LblPrecoTotal"  FontSize="Medium"  FontAttributes="Bold"/>
+                                <Span Text="R$ " 
+                                      FontSize="Medium"  
+                                      FontAttributes="Bold" />
+                                <Span x:Name="LblPrecoTotal"  
+                                      FontSize="Medium"  
+                                      FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -127,10 +131,10 @@
                     CornerRadius="0"
                     Padding="30"
                     Margin="0,0,0,5"
-                    BackgroundColor="#3CB371"
+                    BackgroundColor="#32CD32"
                     FontSize="15"  
                     FontAttributes="Bold"
-                    TextColor="White"
+                    TextColor="#FFFFFF"
                     x:Name="BtnIncluirNoCarrinho"                     
                     Clicked="BtnIncluirNoCarrinho_Clicked"/>
 

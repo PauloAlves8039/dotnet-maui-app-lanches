@@ -21,8 +21,8 @@
                 <DataTemplate>
                     <Frame Padding="10"
                            CornerRadius="10"
-                           BorderColor="LightBlue"
-                           BackgroundColor="White">
+                           BorderColor="#ADD8E6"
+                           BackgroundColor="#FFFFFF">
 
                         <Grid RowDefinitions="Auto,Auto,Auto"
                               ColumnDefinitions="3*,6*,1*"
@@ -62,9 +62,9 @@
                                 <Button HeightRequest="25"
                                         WidthRequest="25"
                                         CornerRadius="8"
-                                        BackgroundColor="White"
-                                        TextColor="Black"
-                                        BorderColor="Black"
+                                        BackgroundColor="#FFFFFF"
+                                        TextColor="#000000"
+                                        BorderColor="#000000"
                                         BorderWidth="1"
                                         Text="-"
                                         Padding="0"
@@ -83,7 +83,7 @@
                                 <Button HeightRequest="25"
                                         WidthRequest="25"
                                         CornerRadius="8"
-                                        BackgroundColor="#3CB371"
+                                        BackgroundColor="#32CD32"
                                         Text="+"
                                         Padding="0"
                                         FontAttributes="Bold"
@@ -112,8 +112,8 @@
 
         <Frame Grid.Row="2"
                Padding="10"
-               BackgroundColor="White"
-               BorderColor="White">
+               BackgroundColor="#FFFFFF"
+               BorderColor="#FFFFFF">
 
             <Grid RowDefinitions="Auto,Auto"
                   ColumnDefinitions="8*,2*">
@@ -145,7 +145,7 @@
         <Frame Grid.Row="3"
                Padding="10"
                BorderColor="Transparent"
-               BackgroundColor="#3CB371">
+               BackgroundColor="#32CD32">
 
             <Grid RowDefinitions="Auto,Auto"
                   ColumnDefinitions="5*,5*">
@@ -153,13 +153,13 @@
                 <Label Grid.Row="0"
                        Grid.Column="0"
                        Text="Preço Total"
-                       TextColor="White"
+                       TextColor="#FFFFFF"
                        FontAttributes="Bold"
                        Margin="10,0,0,0" />
 
                 <Label Grid.Row="1"
                        Grid.Column="0"
-                       TextColor="White"
+                       TextColor="#FFFFFF"
                        Margin="10,0,0,0">
 
                     <Label.FormattedText>
@@ -168,10 +168,11 @@
                                 <Span Text="R$ "
                                       FontSize="Medium"
                                       FontAttributes="Bold"
-                                      TextColor="White" />
+                                      TextColor="#FFFFFF" />
                                 <Span x:Name="LblPrecoTotal"
-                                      TextColor="White" FontAttributes="Bold" 
-                                      FontSize="Medium"/>
+                                      TextColor="#FFFFFF"
+                                      FontAttributes="Bold"
+                                      FontSize="Medium" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -187,9 +188,9 @@
                     <Label Text="Confirmar Pedido "
                            Padding="0"
                            VerticalOptions="Center"
-                           BackgroundColor="#3CB371"
+                           BackgroundColor="#32CD32"
                            FontAttributes="Bold"
-                           TextColor="White" />
+                           TextColor="#FFFFFF" />
 
                     <Image Source="rightarrow"
                            HeightRequest="25"

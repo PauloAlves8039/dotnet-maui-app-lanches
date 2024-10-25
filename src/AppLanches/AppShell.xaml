@@ -7,11 +7,11 @@
        Shell.FlyoutBehavior="Disabled"
        Shell.NavBarHasShadow="True"
        Shell.BackgroundColor="#FF4500"
-       Shell.ForegroundColor="White"
-       Shell.TitleColor="White"
-       Shell.UnselectedColor="White"
+       Shell.ForegroundColor="#FFFFFF"
+       Shell.TitleColor="#FFFFFF"
+       Shell.UnselectedColor="#FFFFFF"
        Shell.DisabledColor="#BFBFBF"
-       Shell.TabBarTitleColor="AntiqueWhite"
+       Shell.TabBarTitleColor="#FAEBD7"
        Shell.TabBarBackgroundColor="#FF4500"
-       Shell.TabBarForegroundColor="White">
+       Shell.TabBarForegroundColor="#FFFFFF">
 </Shell>

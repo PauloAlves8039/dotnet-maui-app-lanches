@@ -9,7 +9,7 @@
         <VerticalStackLayout Padding="10" Spacing="15">
             <Label Text="Perguntas Frequentes"
                    FontSize="Medium"
-                   TextColor="DarkBlue"
+                   TextColor="#1874CD"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
@@ -21,7 +21,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="Para fazer um pedido, você deve navegar pelo nosso catálogo de lanches, selecionar os itens desejados, adicionar ao carrinho e seguir para o checkout para finalizar a compra."
-                           TextColor="DarkBlue"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -34,7 +34,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="Aceitamos cartões de crédito e débito, Pix, e pagamento em dinheiro na entrega."
-                           TextColor="DarkBlue"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -47,7 +47,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="Sim, você pode acompanhar o status do seu pedido através da seção 'Meus Pedidos' no nosso aplicativo."
-                           TextColor="DarkBlue"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -60,7 +60,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="O tempo de entrega pode variar dependendo da sua localização e da demanda no momento. Geralmente, nossos pedidos são entregues em até 45 minutos."
-                            TextColor="DarkBlue"
+                            TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -73,7 +73,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="Você pode cancelar ou alterar seu pedido dentro de 10 minutos após a realização do mesmo. Para isso, entre em contato com o nosso suporte através do aplicativo."
-                           TextColor="DarkBlue"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -86,7 +86,7 @@
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
                     <Label Text="Se você receber um pedido incorreto, entre em contato com nosso suporte imediatamente para que possamos resolver o problema o mais rápido possível."
-                           TextColor="DarkBlue"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>
@@ -98,8 +98,8 @@
                            FontAttributes="Bold" />
                 </toolkit:Expander.Header>
                 <toolkit:Expander.Content>
-                    <Label Text="Você pode entrar em contato com o suporte de segunda a sexta-feira através do email 'contato@lanchesmac.com' ou pelo telefone : (14)9876-0011 das 8:00 às 18: hs"
-                           TextColor="DarkBlue"
+                    <Label Text="Você pode entrar em contato com o suporte de segunda a sexta-feira através do email 'contato@lanchesmac.com' ou pelo telefone : (81)98888-8888 das 8:00 às 18: hs"
+                           TextColor="#1874CD"
                            FontSize="12" />
                 </toolkit:Expander.Content>
             </toolkit:Expander>

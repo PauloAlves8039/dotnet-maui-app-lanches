@@ -7,7 +7,7 @@
     <Grid RowDefinitions="Auto,5*,1*" RowSpacing="0">
 
         <VerticalStackLayout Grid.Row="0"
-                             BackgroundColor="#00FFFF"
+                             BackgroundColor="#FB8C00"
                              VerticalOptions="Start"
                              Spacing="1"
                              Padding="20">
@@ -23,7 +23,7 @@
 
             <Label x:Name="LblNomeUsuario"
                    HorizontalOptions="Center"
-                   TextColor="Black" />
+                   TextColor="#000000" />
 
         </VerticalStackLayout>
 
@@ -41,7 +41,7 @@
                 </HorizontalStackLayout.GestureRecognizers>
             </HorizontalStackLayout>
 
-            <Border HeightRequest="1" BackgroundColor="Gray" />
+            <Border HeightRequest="1" BackgroundColor="#BEBEBE" />
 
             <HorizontalStackLayout Spacing="10">
                 <Image Source="perfilconfig" HeightRequest="30" />
@@ -53,7 +53,7 @@
                 </HorizontalStackLayout.GestureRecognizers>
             </HorizontalStackLayout>
 
-            <Border HeightRequest="1" BackgroundColor="Gray" />
+            <Border HeightRequest="1" BackgroundColor="#BEBEBE" />
 
             <HorizontalStackLayout Spacing="10">
                 <Image Source="perguntas" HeightRequest="30" />

@@ -21,7 +21,7 @@
 
         <Frame Grid.Row="2"
                Padding="15"
-               BackgroundColor="White">
+               BackgroundColor="#FFFFFF">
             <VerticalStackLayout>
                 <Entry Placeholder="Nome" 
                        x:Name="EntNome" />
@@ -42,7 +42,7 @@
         <Button Grid.Row="3"
                 Text="Faça o seu registro"
                 FontSize="Medium"
-                BackgroundColor="#A90409"
+                BackgroundColor="#32CD32"
                 x:Name="BtnSignup"
                 Clicked="BtnSignup_Clicked"/>
         <HorizontalStackLayout Grid.Row="4"
@@ -50,7 +50,7 @@
                                HorizontalOptions="Center"
                                VerticalOptions="EndAndExpand">
             <Label Text="Já possui uma conta?" />
-            <Label Text="Entre aqui" TextColor="#A90409" FontAttributes="Bold">
+            <Label Text="Entre aqui" TextColor="#32CD32" FontAttributes="Bold">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer x:Name="TapLogin" Tapped="TapLogin_Tapped" />
                 </Label.GestureRecognizers>

@@ -17,11 +17,11 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"    
                VerticalOptions="CenterAndExpand"
-               TextColor="DarkBlue"    
+               TextColor="#1C86EE"    
                Margin="0,20,0,0" />
 
         <Button Text="Retornar"   
-                    BackgroundColor="DarkBlue"
+                    BackgroundColor="#1C86EE"
                     x:Name="BtnRetornar"    
                     FontAttributes="Bold"
                     Clicked="BtnRetornar_Clicked"

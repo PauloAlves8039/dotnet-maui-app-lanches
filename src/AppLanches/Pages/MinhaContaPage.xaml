@@ -7,7 +7,7 @@
     <Grid RowDefinitions="Auto,*" RowSpacing="0">
 
         <VerticalStackLayout Grid.Row="0"
-                         BackgroundColor="#00FFFF"
+                         BackgroundColor="#FB8C00"
                          VerticalOptions="Start"
                          Spacing="1"
                          Padding="20">
@@ -20,8 +20,9 @@
                      x:Name="ImgBtnPerfil"/>
 
             <Label x:Name="LblNomeUsuario"
-               HorizontalOptions="Center"
-               TextColor="Black" />
+                   HorizontalOptions="Center"
+                   TextColor="#FFFFFF"
+                   FontAttributes="Bold"/>
 
         </VerticalStackLayout>
         <VerticalStackLayout Grid.Row="1"
@@ -29,25 +30,25 @@
                          Spacing="20">
 
             <Entry Placeholder="Nome"
-               FontSize="12"
-               x:Name="EntNome" />
+                   FontSize="12"
+                   x:Name="EntNome" />
 
             <Entry Placeholder="Email"
-               Keyboard="Email"
-               FontSize="12"
-               x:Name="EntEmail" />
+                   Keyboard="Email"
+                   FontSize="12"
+                   x:Name="EntEmail" />
 
             <Entry Placeholder="Telefone"
-                 Keyboard="Telephone"
-                 FontSize="12"
-                 x:Name="EntFone" />
+                   Keyboard="Telephone"
+                   FontSize="12"
+                   x:Name="EntFone" />
 
             <Button Text="Salvar"
-                FontSize="Small"
-                FontAttributes="Bold"
-                Clicked="Button_Clicked"
-                BackgroundColor="#00FFFF"
-                TextColor="#A52A2A" />
+                    FontSize="Small"
+                    FontAttributes="Bold"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#FB8C00"
+                    TextColor="#FFFFFF" />
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

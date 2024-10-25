@@ -11,31 +11,31 @@
 
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical"
-                          Span="2"
-                          HorizontalItemSpacing="10"
-                          VerticalItemSpacing="10" />
+                             Span="2"
+                             HorizontalItemSpacing="10"
+                             VerticalItemSpacing="10" />
         </CollectionView.ItemsLayout>
 
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <Border VerticalOptions="Start"
-                     StrokeShape="RoundRectangle 15,15,15,15"
-                     Padding="10">
+                        StrokeShape="RoundRectangle 15,15,15,15"
+                        Padding="10">
                     <Grid RowSpacing="5"
-                       RowDefinitions="Auto,Auto,Auto">
+                          RowDefinitions="Auto,Auto,Auto">
                         <Image Aspect="AspectFit"
-                                HeightRequest="150" 
-                                Source="{Binding CaminhoImagem}"/>
+                               HeightRequest="150" 
+                               Source="{Binding CaminhoImagem}"/>
                         <Label Grid.Row="1"
-                            FontAttributes="Bold"
-                            FontSize="Medium" 
-                            LineBreakMode="WordWrap"
-                            MaxLines="2" 
-                            Text="{Binding Nome}" />
+                               FontAttributes="Bold"
+                               FontSize="Medium" 
+                               LineBreakMode="WordWrap"
+                               MaxLines="2" 
+                               Text="{Binding Nome}" />
                         <Label Grid.Row="2"
-                         FontAttributes="Bold" 
-                         FontSize="Medium"   
-                         Text="{Binding Preco,StringFormat='R$ {0:F2}'}"/>
+                               FontAttributes="Bold" 
+                               FontSize="Medium"   
+                               Text="{Binding Preco,StringFormat='R$ {0:F2}'}"/>
                     </Grid>
                 </Border>
             </DataTemplate>
