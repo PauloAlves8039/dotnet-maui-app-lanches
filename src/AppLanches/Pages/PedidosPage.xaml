@@ -46,7 +46,7 @@
                             <Label Grid.Row="1"
                                    Grid.Column="1"
                                    FontSize="12"  
-                                   Text="{Binding DataPedido, StringFormat='{0:dd.MM.yyyy hh:mm}'}"
+                                   Text="{Binding DataPedido, StringFormat='{0:dd/MM/yyyy HH:mm}'}"
                                    FontAttributes="Bold"/>
                             <Label Grid.Row="2"
                                    Grid.Column="0"
@@ -57,7 +57,7 @@
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <FormattedString.Spans>
-                                            <Span Text="R$" FontSize="12"  />
+                                            <Span Text="R$ " FontAttributes="Bold" FontSize="12"  />
                                             <Span  Text="{Binding PedidoTotal}" FontAttributes="Bold" FontSize="12"  />
                                         </FormattedString.Spans>
                                     </FormattedString>
