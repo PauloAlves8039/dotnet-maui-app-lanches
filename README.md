@@ -9,6 +9,8 @@
 
 Aplicação mobile básica para simular vendas de lanches, o código fonte do projeto foi baseado no curso [.NET MAUI Essencial](https://www.udemy.com/course/net-maui-essencial/?couponCode=LETSLEARNNOW).
 
+Esse projeto esta se comunicando com o backend [ApiECommerce](https://github.com/PauloAlves8039/ApiECommerce).
+
 ## :blue_book: Regra de Negócio
 
 Esse projeto dispõe do uso de um catálogo de `lanches` com as seguintes funcionalidades:
@@ -42,6 +44,7 @@ git clone https://github.com/PauloAlves8039/dotnet-maui-app-lanches.git
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-maui-app-lanches/blob/master/src/AppLanches/Resources/Images/screenshots/screenshot3.png" style="width:400px;" /> </p>
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-maui-app-lanches/blob/master/src/AppLanches/Resources/Images/screenshots/screenshot5.png" style="width:400px;" /> </p>
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-maui-app-lanches/blob/master/src/AppLanches/Resources/Images/screenshots/screenshot7.png" style="width:400px;" /> </p>
+
 ## :boy: Author
 
 <a href="https://github.com/PauloAlves8039"><img src="https://avatars.githubusercontent.com/u/57012714?v=4" width=70></a>
